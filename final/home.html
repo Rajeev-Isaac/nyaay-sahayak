@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gurajada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <title>Your Home Page</title>
+</head>
+<body>
+    <header>
+        <h1 class="header1"><div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3 class="animate-charcter"> Nyay Sahayak </h3>
+            </div>
+          </div>
+        </div></h1>
+        <nav class="buttons">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="title">
+        <div class = div1>
+            న్యాయ సహాయక్
+        </div>
+        <div class="div2">
+            न्याय सहायक 
+        </div>
+        <div class="div3">
+            NYAY SAHAYAK
+        </div>     
+    </section>
+    <section id="home">
+        <h2>Welcome to Our Website!</h2>
+        <p> Welcome to our cutting-edge chatbot designed exclusively for navigating the intricate landscape of Indian laws and the legal system. Whether you're seeking clarity on legal procedures, understanding your rights, or unraveling the complexities of Indian statutes, our chatbot is here to assist you every step of the way.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@example.com</p>
+        <p>Phone: +1 123-456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          setInterval(switchDivs, 2000);
+        });
+    
+        function switchDivs() {
+          var div1 = document.querySelector('.div1');
+          var div2 = document.querySelector('.div2');
+          var div3 = document.querySelector('.div3');
+          
+          const logo = ["none","block"];
+          const a = 1;
+          const b = 0;
+         
+          div1.style.display = logo[a];
+          div2.style.display = logo[b];
+          div3.style.display = logo[b];
+
+          if(a==1){
+            b = 1;
+            a = 0;
+          }
+          else if(b == 1){
+            a =1;
+            b =0;
+          }
+          /*if (div1.style.display === 'none') {
+            div1.style.display = 'block';
+            div2.style.display = 'none';
+            div3.style.display = 'none';
+          } else if (div3.style.display === 'none') {
+            div1.style.display = 'none';
+            div2.style.display = 'block';
+            div3.style.display = 'none';
+          } else if (div2.style.display === 'none') {
+            div1.style.display = 'block';
+            div2.style.display = 'none';
+            div3.style.display = 'none';
+          } else if (div3.style.display === 'none') {
+            div1.style.display = 'none';
+            div2.style.display = 'block';
+            div3.style.display = 'none';
+          }*/
+        }
+      </script>
+</body>
+</html>
+
